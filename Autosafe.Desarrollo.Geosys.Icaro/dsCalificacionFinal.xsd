@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsCalificacionFinal" targetNamespace="http://tempuri.org/dsCalificacionFinal.xsd" xmlns:mstns="http://tempuri.org/dsCalificacionFinal.xsd" xmlns="http://tempuri.org/dsCalificacionFinal.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsCalificacionFinal" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsCalificacionFinal" msprop:Generator_UserDSName="dsCalificacionFinal">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ReporteConsolidadoCalificacion" msprop:Generator_TableClassName="ReporteConsolidadoCalificacionDataTable" msprop:Generator_TableVarName="tableReporteConsolidadoCalificacion" msprop:Generator_TablePropName="ReporteConsolidadoCalificacion" msprop:Generator_RowDeletingName="ReporteConsolidadoCalificacionRowDeleting" msprop:Generator_RowChangingName="ReporteConsolidadoCalificacionRowChanging" msprop:Generator_RowEvHandlerName="ReporteConsolidadoCalificacionRowChangeEventHandler" msprop:Generator_RowDeletedName="ReporteConsolidadoCalificacionRowDeleted" msprop:Generator_UserTableName="ReporteConsolidadoCalificacion" msprop:Generator_RowChangedName="ReporteConsolidadoCalificacionRowChanged" msprop:Generator_RowEvArgName="ReporteConsolidadoCalificacionRowChangeEvent" msprop:Generator_RowClassName="ReporteConsolidadoCalificacionRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Secuencia" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="1" msprop:Generator_ColumnVarNameInTable="columnSecuencia" msprop:Generator_ColumnPropNameInRow="Secuencia" msprop:Generator_ColumnPropNameInTable="SecuenciaColumn" msprop:Generator_UserColumnName="Secuencia" type="xs:int" />
+              <xs:element name="Rural" msprop:Generator_ColumnVarNameInTable="columnRural" msprop:Generator_ColumnPropNameInRow="Rural" msprop:Generator_ColumnPropNameInTable="RuralColumn" msprop:Generator_UserColumnName="Rural" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="Urbana" msprop:Generator_ColumnVarNameInTable="columnUrbana" msprop:Generator_ColumnPropNameInRow="Urbana" msprop:Generator_ColumnPropNameInTable="UrbanaColumn" msprop:Generator_UserColumnName="Urbana" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="Vias" msprop:Generator_ColumnVarNameInTable="columnVias" msprop:Generator_ColumnPropNameInRow="Vias" msprop:Generator_ColumnPropNameInTable="ViasColumn" msprop:Generator_UserColumnName="Vias" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="Ralenti" msprop:Generator_ColumnVarNameInTable="columnRalenti" msprop:Generator_ColumnPropNameInRow="Ralenti" msprop:Generator_ColumnPropNameInTable="RalentiColumn" msprop:Generator_UserColumnName="Ralenti" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="Acelera" msprop:Generator_ColumnVarNameInTable="columnAcelera" msprop:Generator_ColumnPropNameInRow="Acelera" msprop:Generator_ColumnPropNameInTable="AceleraColumn" msprop:Generator_UserColumnName="Acelera" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="Frenada" msprop:Generator_ColumnVarNameInTable="columnFrenada" msprop:Generator_ColumnPropNameInRow="Frenada" msprop:Generator_ColumnPropNameInTable="FrenadaColumn" msprop:Generator_UserColumnName="Frenada" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="Total" msprop:Generator_ColumnVarNameInTable="columnTotal" msprop:Generator_ColumnPropNameInRow="Total" msprop:Generator_ColumnPropNameInTable="TotalColumn" msprop:Generator_UserColumnName="Total" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="Final" msprop:Generator_ColumnVarNameInTable="columnFinal" msprop:Generator_ColumnPropNameInRow="Final" msprop:Generator_ColumnPropNameInTable="FinalColumn" msprop:Generator_UserColumnName="Final" type="xs:string" default="Malo" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="ReporteConsolidadoCalificacionKey1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ReporteConsolidadoCalificacion" />
+      <xs:field xpath="mstns:Secuencia" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

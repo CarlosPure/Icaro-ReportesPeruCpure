@@ -1,0 +1,485 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F6E9AB97-AAF2-4C33-ABA1-3A46A179B2FB}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <StartupObject>Icaro.Funciones</StartupObject>
+    <RootNamespace>Icaro</RootNamespace>
+    <AssemblyName>Icaro</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Console</MyType>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\APP\aaaaa\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>3</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Icaro.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Icaro.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>0217E8A77F40804BB0FA2243BA434FB8BF617C4F</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Icaro_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v17.1, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v17.1, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Office.v17.1.Core, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Pdf.v17.1.Core, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.PivotGrid.v17.1.Core, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v17.1.Core, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v17.1.Core, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v17.1.Export, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Sparkline.v17.1.Core, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v17.1, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v17.1, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v17.1, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v17.1, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPivotGrid.v17.1, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v17.1, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\GeoSysv213\Componentes\Microsoft.SqlServer.Types.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NPOI">
+      <HintPath>Reporte\Plantillas\dotnet4\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OOXML">
+      <HintPath>Reporte\Plantillas\dotnet4\NPOI.OOXML.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXml4Net">
+      <HintPath>Reporte\Plantillas\dotnet4\NPOI.OpenXml4Net.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXmlFormats">
+      <HintPath>Reporte\Plantillas\dotnet4\NPOI.OpenXmlFormats.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Clases\cDispositivoSkywave.vb" />
+    <Compile Include="Clases\cResumen.vb" />
+    <Compile Include="Clases\cDetalleUbicacionGeografica.vb" />
+    <Compile Include="Clases\cCredenciales.vb" />
+    <Compile Include="Clases\cPerfilUsuarioMonitoreo.vb" />
+    <Compile Include="Clases\cPerfil.vb" />
+    <Compile Include="Clases\cGestionRiesgo2.vb" />
+    <Compile Include="Clases\cResumenUbicacionGeografica.vb" />
+    <Compile Include="Clases\cConsolidado.vb" />
+    <Compile Include="Clases\cFinancieraNoTransmision.vb" />
+    <Compile Include="Clases\cCuadroTrabajo.vb" />
+    <Compile Include="Clases\cGestionRiesgo.vb" />
+    <Compile Include="Clases\cCalidadManejo.vb" />
+    <Compile Include="Clases\cProtocoloManejo.vb" />
+    <Compile Include="Clases\MyWebClient.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Clases\cEjecutivo.vb" />
+    <Compile Include="Clases\cCompacto.vb" />
+    <Compile Include="Clases\cFlota.vb" />
+    <Compile Include="Clases\cHorasTrabajadasDetalle.vb" />
+    <Compile Include="Clases\cEvento.vb" />
+    <Compile Include="Clases\cHistoricoMulti.vb" />
+    <Compile Include="Clases\cAlertas.vb" />
+    <Compile Include="Clases\cComportamiento.vb" />
+    <Compile Include="Clases\cComportamientoResumen.vb" />
+    <Compile Include="Clases\cConductor.vb" />
+    <Compile Include="Clases\cGeneracion.vb" />
+    <Compile Include="Clases\cHistorico.vb" />
+    <Compile Include="Clases\cHorasTrabajadas.vb" />
+    <Compile Include="Clases\cKilometraje.vb" />
+    <Compile Include="Clases\cResumenEventos.vb" />
+    <Compile Include="Clases\cTrayectos.vb" />
+    <Compile Include="Clases\cTrayectosDetalle.vb" />
+    <Compile Include="Clases\cVelocidad.vb" />
+    <Compile Include="Clases\cZonas.vb" />
+    <Compile Include="Clases\Student.vb" />
+    <Compile Include="Data\dsComportamiento.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsComportamiento.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Data\dsCalificacionFinal.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsCalificacionFinal.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Data\dsCalificacionFinal.vb">
+      <DependentUpon>dsCalificacionFinal.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Data\dsEventos.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsEventos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Data\dsEventos.vb">
+      <DependentUpon>dsEventos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Thor25.designer.vb">
+      <DependentUpon>Thor25.dbml</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Data\Thor25.vb">
+      <DependentUpon>Thor25.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Thor.vb">
+      <DependentUpon>Thor.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\fChart.Designer.vb">
+      <DependentUpon>fChart.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\fChart.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\fChartResumen.Designer.vb">
+      <DependentUpon>fChartResumen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\fChartResumen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\fCuadroTrabajoPeruGrid.designer.vb">
+      <DependentUpon>fCuadroTrabajoPeruGrid.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\fCuadroTrabajoPeruGrid.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\fProtocoloManejoGrid.designer.vb">
+      <DependentUpon>fProtocoloManejoGrid.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\fProtocoloManejoGrid.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\fFinancieraNoTransmisionGrid.designer.vb">
+      <DependentUpon>fFinancieraNoTransmisionGrid.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\fFinancieraNoTransmisionGrid.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\fGrid.Designer.vb">
+      <DependentUpon>fGrid.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\fGrid.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\fHistorico.Designer.vb">
+      <DependentUpon>fHistorico.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\fHistorico.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\fCuadroTrabajoGrid.designer.vb">
+      <DependentUpon>fCuadroTrabajoGrid.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\fCuadroTrabajoGrid.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\fMafGrid2.designer.vb">
+      <DependentUpon>fMafGrid2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\fMafGrid2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\fMafGrid.designer.vb">
+      <DependentUpon>fMafGrid.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\fMafGrid.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\fResumenAlertas.Designer.vb">
+      <DependentUpon>fResumenAlertas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\fResumenAlertas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\fZonas.Designer.vb">
+      <DependentUpon>fZonas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\fZonas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Funciones.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Data\Thor.designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Thor.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\Thor25.dbml.layout">
+      <DependentUpon>Thor25.dbml</DependentUpon>
+    </None>
+    <EmbeddedResource Include="Formularios\fChart.resx">
+      <DependentUpon>fChart.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\fChartResumen.resx">
+      <DependentUpon>fChartResumen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\fCuadroTrabajoPeruGrid.resx">
+      <DependentUpon>fCuadroTrabajoPeruGrid.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\fProtocoloManejoGrid.resx">
+      <DependentUpon>fProtocoloManejoGrid.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\fFinancieraNoTransmisionGrid.resx">
+      <DependentUpon>fFinancieraNoTransmisionGrid.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\fGrid.resx">
+      <DependentUpon>fGrid.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\fHistorico.resx">
+      <DependentUpon>fHistorico.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\fCuadroTrabajoGrid.resx">
+      <DependentUpon>fCuadroTrabajoGrid.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\fMafGrid2.resx">
+      <DependentUpon>fMafGrid2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\fMafGrid.resx">
+      <DependentUpon>fMafGrid.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\fResumenAlertas.resx">
+      <DependentUpon>fResumenAlertas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\fZonas.resx">
+      <DependentUpon>fZonas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram2.cd" />
+    <None Include="Data\dsComportamiento.xsc">
+      <DependentUpon>dsComportamiento.xsd</DependentUpon>
+    </None>
+    <None Include="Data\dsComportamiento.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsComportamiento.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Data\dsComportamiento.xss">
+      <DependentUpon>dsComportamiento.xsd</DependentUpon>
+    </None>
+    <None Include="Data\dsEventos.xsc">
+      <DependentUpon>dsEventos.xsd</DependentUpon>
+    </None>
+    <None Include="Data\dsEventos.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsEventos.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Data\dsEventos.xss">
+      <DependentUpon>dsEventos.xsd</DependentUpon>
+    </None>
+    <None Include="Data\Thor25.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>Thor25.designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Data\Thor.dbml.layout">
+      <DependentUpon>Thor.dbml</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\dsCalificacionFinal.xsc">
+      <DependentUpon>dsCalificacionFinal.xsd</DependentUpon>
+    </None>
+    <None Include="Data\dsCalificacionFinal.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsCalificacionFinal.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Data\dsCalificacionFinal.xss">
+      <DependentUpon>dsCalificacionFinal.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Data\Thor.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>Thor.designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Usuarios\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Autosafe.Desarrollo.Geosys.Entidades\Autosafe.Desarrollo.Geosys.Entidades.csproj">
+      <Project>{e3fe3347-bee5-4c87-ae25-80ee4f9ea76c}</Project>
+      <Name>Autosafe.Desarrollo.Geosys.Entidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Autosafe.Desarrollo.Geosys.Negocios\Autosafe.Desarrollo.Geosys.Negocios.csproj">
+      <Project>{f4fc27b6-14a5-4447-909e-685caf597cf5}</Project>
+      <Name>Autosafe.Desarrollo.Geosys.Negocios</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Plantillas\Default.html" />
+    <Content Include="Plantillas\RelsaEjecutivo.html" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

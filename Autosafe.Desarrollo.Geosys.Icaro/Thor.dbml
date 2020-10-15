@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="GEOSYS" Class="ThorDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=10.100.97.101,47000;Initial Catalog=GEOSYS;Persist Security Info=True;User ID=cdtdev" SettingsObjectName="mtEnvioReportesGEO.My.MySettings" SettingsPropertyName="GEOSYSConnectionString" Provider="System.Data.SqlClient" />
+  <Function Name="dbo.spEtiquetasConsultar" Method="spEtiquetasConsultar">
+    <Parameter Name="IdDispositivo" Parameter="idDispositivo" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="Intervalo" Parameter="intervalo" Type="System.String" DbType="VarChar(3)" />
+    <Parameter Name="FechaInicial" Parameter="fechaInicial" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="FechaFinal" Parameter="fechaFinal" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="IdUsuario" Parameter="idUsuario" Type="System.Int32" DbType="Int" />
+    <ElementType Name="spEtiquetasConsultarResult">
+      <Column Name="Etiqueta" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="FechaInicio" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="FechaHasta" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Actual" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.spReporteProgramadoListar" Method="spReporteProgramadoListar">
+    <Parameter Name="idUsuario" Type="System.Int32" DbType="Int" />
+    <ElementType Name="spReporteProgramadoListarResult">
+      <Column Name="IdUsuario" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Email" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="HoraEnvio" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="TipoReporte" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="Intervalo" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Parametros" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Activos" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="Secuencia" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Horas" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Guardar" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.spReporteProgramadoListaActualizar" Method="spReporteProgramadoListaActualizar">
+    <Parameter Name="Secuencia" Parameter="secuencia" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.GetVIDPlaca" Method="GetVIDPlaca" IsComposable="true">
+    <Parameter Name="Alias" Parameter="alias" Type="System.String" DbType="VarChar(30)" />
+    <Return Type="System.String" />
+  </Function>
+  <Function Name="dbo.spActivosSinReportar" Method="spActivosSinReportar">
+    <Parameter Name="IdUsuario" Parameter="idUsuario" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IP" Parameter="iP" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="VID" Parameter="vID" Type="System.String" DbType="VarChar(30)" />
+    <ElementType Name="spActivosSinReportarResult">
+      <Column Name="IdEntidad" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Entidad" Type="System.String" DbType="VarChar(201)" CanBeNull="true" />
+      <Column Name="IdActivo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="VID" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Alias" Type="System.String" DbType="VarChar(8000)" CanBeNull="true" />
+      <Column Name="Ignicion" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="Rumbo" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="Velocidad" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="Latitud" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="Longitud" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="Odometro" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="Calle" Type="System.String" DbType="VarChar(300)" CanBeNull="true" />
+      <Column Name="[Pto. Cercano]" Member="Pto__Cercano" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="UltimoReporte" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UltimoReporteServidor" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DiasSinReportar" Type="System.String" DbType="VarChar(37)" CanBeNull="true" />
+      <Column Name="Evento" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DEvento" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Marca" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Modelo" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Motor" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Chasis" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Color" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Año" Type="System.String" DbType="VarChar(4)" CanBeNull="true" />
+      <Column Name="CodSysHunter" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Producto" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Icono" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="Actividad" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="IdUsuario" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NivelBateria" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="VoltajeBateria" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="EstadoGPS" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="Horometro" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="VoltajeAlimentacion" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="EA1" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="EA2" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="EA3" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="SA1" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="SA2" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="SA3" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="DriverID" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="IdChofer" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="Chofer" Type="System.String" DbType="VarChar(301)" CanBeNull="true" />
+      <Column Name="ChoferDriverID" Type="System.String" DbType="VarChar(301)" CanBeNull="true" />
+      <Column Name="Estado" Type="System.String" DbType="VarChar(3)" CanBeNull="true" />
+      <Column Name="VelocidadOBD" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="rpmOBD" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="PosicionAceleradorOBD" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="OdometroOBD" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="OdometroViajeOBD" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="NivelGasolinaOBD" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="CombustibleRestanteOBD" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="EngraneTransmisionOBD" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="TemperaturaRefrigeranteOBD" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="IndiceGasolinaOBD" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="VoltajeAlimentacionOBD" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="EstadoSeñalesGiroOBD" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="GasolinaConsumidaPorViajeOBD" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="IndicadoresOBD" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="CE" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="TipoVehiculo" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="Provincia" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="DetenidoDesde" Type="System.String" DbType="VarChar(40)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.spDispositivoPermanencia" Method="spDispositivoPermanencia">
+    <Parameter Name="vid" Type="System.String" DbType="VarChar(40)" />
+    <Parameter Name="Desde" Parameter="desde" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="Hasta" Parameter="hasta" Type="System.String" DbType="VarChar(20)" />
+    <ElementType Name="spDispositivoPermanenciaResult">
+      <Column Name="Permanencia" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Direccion" Type="System.String" DbType="VarChar(300)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Minute2Text" Method="Minute2Text" IsComposable="true">
+    <Parameter Name="CantidadMinutos" Parameter="cantidadMinutos" Type="System.Double" DbType="Float" />
+    <Return Type="System.String" />
+  </Function>
+  <Function Name="dbo.Minute2Text2" Method="Minute2Text2" IsComposable="true">
+    <Parameter Name="CantidadMinutos" Parameter="cantidadMinutos" Type="System.Double" DbType="Float" />
+    <Return Type="System.String" />
+  </Function>
+  <Function Name="dbo.getUsuarioxID" Method="getUsuarioxID" IsComposable="true">
+    <Parameter Name="idUsuario" Type="System.Int32" DbType="Int" />
+    <Return Type="System.String" />
+  </Function>
+  <Function Name="dbo.spActivoAliasBuscar" Method="spActivoAliasBuscar">
+    <Parameter Name="Vid" Parameter="vid" Type="System.String" DbType="VarChar(20)" />
+    <ElementType Name="spActivoAliasBuscarResult">
+      <Column Name="Alias" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.getDescripcionEvento" Method="getDescripcionEvento" IsComposable="true">
+    <Parameter Name="Vid" Parameter="vid" Type="System.String" DbType="VarChar(30)" />
+    <Parameter Name="Evento" Parameter="evento" Type="System.Int32" DbType="Int" />
+    <Return Type="System.String" />
+  </Function>
+</Database>

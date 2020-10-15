@@ -1,0 +1,106 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="UsuarioEmail" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">ddulanto</Value>
+    </Setting>
+    <Setting Name="ClaveEmail" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">ddulanto</Value>
+    </Setting>
+    <Setting Name="GenerarMaps" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="ColumnasReporte" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">AÑO;MES;DIA;KMS;CONSUMO;EXCESO100;FRENADA;GIROIZQ;GIRODER;RALENTI;ALARMA</Value>
+    </Setting>
+    <Setting Name="UsarTablaCalificacion" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="Espera" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">60000</Value>
+    </Setting>
+    <Setting Name="Debug" Type="System.UInt32" Scope="Application">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="EnviarEmails" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="RutaDescargas" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">C:\inetpub\wwwroot\Geo\Reportes\Descargas\</Value>
+    </Setting>
+    <Setting Name="EsperaLoadData" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">7200000</Value>
+    </Setting>
+    <Setting Name="EmailDesde" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">informes@huntermonitoreoperu.com</Value>
+    </Setting>
+    <Setting Name="ServidorEmail" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">172.16.1.61</Value>
+    </Setting>
+    <Setting Name="Company" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Autosafe</Value>
+    </Setting>
+    <Setting Name="HoraInicio" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">00:00:00</Value>
+    </Setting>
+    <Setting Name="HoraFin" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">23:59:59</Value>
+    </Setting>
+    <Setting Name="Url_GeneraHTML" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://172.16.1.81/reporte_icaro/PDF/genera_html.php?</Value>
+    </Setting>
+    <Setting Name="Url_GeneraPDF" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://172.16.1.81/reporte_icaro/PDF/genera_pdf.php?</Value>
+    </Setting>
+    <Setting Name="Url_DownloadPDF" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://172.16.1.81/download_ejecutivo/PDFS/</Value>
+    </Setting>
+    <Setting Name="Url_DownloadHTML" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://172.16.1.81/download_ejecutivo/HTML/</Value>
+    </Setting>
+    <Setting Name="ReporteProgramadoPendiente_GuardarLog" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="Pais" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">PE</Value>
+    </Setting>
+    <Setting Name="TotalRegistrosMaximo" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">1000000</Value>
+    </Setting>
+    <Setting Name="ImagenCabeceraEmail" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://www.huntermonitoreoperu.com/GeoV3.3/images/LOGO_HUNTER_PARA_PLATAFORMA.png</Value>
+    </Setting>
+    <Setting Name="TokenEmBlue" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Basic YTQ0MjM1OGQ4MTY3NDc4ZTgzYmIzMjc1ZmY2MDQxNDI=</Value>
+    </Setting>
+    <Setting Name="Url_EmBlueOne" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://track.embluemail.com/contacts/event</Value>
+    </Setting>
+    <Setting Name="Url_EmBlueBulk" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://track.embluemail.com/contacts/event/bulk</Value>
+    </Setting>
+    <Setting Name="GEOSYSConnectionStringMain" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=191.98.146.190,47000;Initial Catalog=GEOSYS;User ID=userBDIcaro;Password=userBDIcaro;Max Pool Size=10024&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=191.98.146.190,47000;Initial Catalog=GEOSYS;User ID=userBDIcaro;Password=userBDIcaro;Max Pool Size=10024</Value>
+    </Setting>
+    <Setting Name="GEOSYSConnectionStringAux" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=191.98.146.190,47000;Initial Catalog=GEOSYS;User ID=userBDIcaro;Password=userBDIcaro;Max Pool Size=10024&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=191.98.146.190,47000;Initial Catalog=GEOSYS;User ID=userBDIcaro;Password=userBDIcaro;Max Pool Size=10024</Value>
+    </Setting>
+    <Setting Name="TokenHunter" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Basic YTQ0MjM1OGQ4MTY3NDc4ZTgzYmIzMjc1ZmY2MDQxNDI=</Value>
+    </Setting>
+    <Setting Name="UrlApiHunter" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://www.huntermonitoreoperu.com:3333/api.integracion/v1/email</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

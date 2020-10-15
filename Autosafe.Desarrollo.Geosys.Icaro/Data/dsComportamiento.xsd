@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsComportamiento" targetNamespace="http://tempuri.org/dsComportamiento.xsd" xmlns:mstns="http://tempuri.org/dsComportamiento.xsd" xmlns="http://tempuri.org/dsComportamiento.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsComportamiento" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsComportamiento" msprop:Generator_UserDSName="dsComportamiento">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Flota" msprop:Generator_TableClassName="FlotaDataTable" msprop:Generator_TableVarName="tableFlota" msprop:Generator_TablePropName="Flota" msprop:Generator_RowDeletingName="FlotaRowDeleting" msprop:Generator_RowChangingName="FlotaRowChanging" msprop:Generator_RowEvHandlerName="FlotaRowChangeEventHandler" msprop:Generator_RowDeletedName="FlotaRowDeleted" msprop:Generator_UserTableName="Flota" msprop:Generator_RowChangedName="FlotaRowChanged" msprop:Generator_RowEvArgName="FlotaRowChangeEvent" msprop:Generator_RowClassName="FlotaRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Vehiculos" msprop:Generator_ColumnVarNameInTable="columnVehiculos" msprop:Generator_ColumnPropNameInRow="Vehiculos" msprop:Generator_ColumnPropNameInTable="VehiculosColumn" msprop:Generator_UserColumnName="Vehiculos" type="xs:string" default="ND" />
+              <xs:element name="Zona_x0020_Rural" msprop:Generator_ColumnVarNameInTable="columnZona_Rural" msprop:Generator_ColumnPropNameInRow="Zona_Rural" msprop:Generator_ColumnPropNameInTable="Zona_RuralColumn" msprop:Generator_UserColumnName="Zona Rural" type="xs:string" default="0" minOccurs="0" />
+              <xs:element name="Zona_x0020_Urbana" msprop:Generator_ColumnVarNameInTable="columnZona_Urbana" msprop:Generator_ColumnPropNameInRow="Zona_Urbana" msprop:Generator_ColumnPropNameInTable="Zona_UrbanaColumn" msprop:Generator_UserColumnName="Zona Urbana" type="xs:string" default="0" minOccurs="0" />
+              <xs:element name="Zona_x0020_Alta_x0020_Velocidad" msprop:Generator_ColumnVarNameInTable="columnZona_Alta_Velocidad" msprop:Generator_ColumnPropNameInRow="Zona_Alta_Velocidad" msprop:Generator_ColumnPropNameInTable="Zona_Alta_VelocidadColumn" msprop:Generator_UserColumnName="Zona Alta Velocidad" type="xs:string" default="0" minOccurs="0" />
+              <xs:element name="Ralenti" msprop:Generator_ColumnVarNameInTable="columnRalenti" msprop:Generator_ColumnPropNameInRow="Ralenti" msprop:Generator_ColumnPropNameInTable="RalentiColumn" msprop:Generator_UserColumnName="Ralenti" type="xs:string" default="0" minOccurs="0" />
+              <xs:element name="Frenadas_x0020_Bruscas" msprop:Generator_ColumnVarNameInTable="columnFrenadas_Bruscas" msprop:Generator_ColumnPropNameInRow="Frenadas_Bruscas" msprop:Generator_ColumnPropNameInTable="Frenadas_BruscasColumn" msprop:Generator_UserColumnName="Frenadas Bruscas" type="xs:string" default="0" minOccurs="0" />
+              <xs:element name="Aceleraciones_x0020_Bruscas" msprop:Generator_ColumnVarNameInTable="columnAceleraciones_Bruscas" msprop:Generator_ColumnPropNameInRow="Aceleraciones_Bruscas" msprop:Generator_ColumnPropNameInTable="Aceleraciones_BruscasColumn" msprop:Generator_UserColumnName="Aceleraciones Bruscas" type="xs:string" default="0" minOccurs="0" />
+              <xs:element name="Resultado_x0020_Final" msprop:Generator_ColumnVarNameInTable="columnResultado_Final" msprop:Generator_ColumnPropNameInRow="Resultado_Final" msprop:Generator_ColumnPropNameInTable="Resultado_FinalColumn" msprop:Generator_UserColumnName="Resultado Final" type="xs:string" default="0" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Flota" />
+      <xs:field xpath="mstns:Vehiculos" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
